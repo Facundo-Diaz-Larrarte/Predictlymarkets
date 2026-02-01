@@ -1,0 +1,214 @@
+Descripción completa del negocio
+
+(Versión “machine-readable” y estratégica)
+
+1. Qué es el negocio
+
+La empresa desarrolla una plataforma de mercados de predicción diseñada para reducir la incertidumbre y la asimetría informativa sobre eventos futuros relevantes (principalmente políticos y regulatorios, pero extensible a otros dominios).
+
+La plataforma permite que individuos e instituciones participen en mercados binarios (YES/NO), donde cada participante expresa sus creencias mediante operaciones con incentivos económicos.
+El resultado central del sistema no es la “apuesta”, sino el precio del mercado, que se interpreta como una probabilidad colectiva del evento.
+
+2. Problema que resuelve
+
+En contextos políticos, regulatorios y estratégicos:
+
+la información está dispersa entre múltiples actores,
+
+los incentivos a revelar creencias verdaderas son débiles,
+
+las fuentes tradicionales (opinión, encuestas, análisis mediático) son ruidosas, tardías o sesgadas,
+
+la incertidumbre afecta decisiones económicas de alto impacto.
+
+El negocio resuelve este problema diseñando un mecanismo institucional que transforma información dispersa y privada en señales probabilísticas públicas, cuantificables y auditables.
+
+3. Principio central (núcleo del negocio)
+
+El dinero no se usa para entretener, sino para disciplinar creencias.
+
+Los participantes arriesgan capital (o staking equivalente) para expresar expectativas.
+Esto hace que:
+
+mentir sea costoso,
+
+la información relevante se revele más rápido,
+
+el precio del mercado agregue conocimiento real.
+
+4. Qué NO es el negocio (límites claros)
+
+❌ No es una casa de apuestas tradicional
+
+❌ No fija cuotas ni asume riesgo direccional
+
+❌ No promete resultados correctos ni certezas
+
+❌ No vende “ganar dinero” como producto
+
+5. Qué SÍ es el negocio
+
+✅ Infraestructura de forecasting colectivo
+
+✅ Sistema de agregación de expectativas
+
+✅ Herramienta de reducción cuantificable de incertidumbre
+
+✅ Productor de información probabilística vendible
+
+6. Cómo funciona el sistema (mecanismo operativo)
+6.1 Creación de mercados
+
+Un usuario (creador):
+
+propone un evento binario claramente definido,
+
+especifica reglas de resolución y fuentes oficiales,
+
+aporta liquidez inicial y una fianza (bond) como “skin in the game”.
+
+Esto incentiva calidad y evita mercados ambiguos o basura.
+
+6.2 Trading y formación de precios
+
+Los participantes compran o venden posiciones YES/NO.
+
+El mercado utiliza un Automated Market Maker (LMSR):
+
+garantiza precios continuos,
+
+funciona incluso con baja liquidez,
+
+produce un precio interpretable como probabilidad.
+
+El precio del mercado = probabilidad implícita del evento.
+
+6.3 Resolución
+
+Al cierre del evento, el mercado se congela.
+
+Un oráculo (inicialmente manual, con disputas incentivadas) resuelve el resultado.
+
+El sistema redistribuye el colateral:
+
+las posiciones ganadoras reciben 1 por share,
+
+las perdedoras reciben 0.
+
+El sistema es (casi) suma cero entre participantes, menos comisiones.
+
+7. Qué información produce la plataforma (activo central)
+
+Cada mercado genera:
+
+Probabilidades explícitas en tiempo real
+
+Evolución temporal de expectativas
+
+Reducción de incertidumbre (entropía)
+
+Señales tempranas ante shocks informativos
+
+Métricas ex post de precisión (Brier score, calibración)
+
+Historial público de desempeño
+
+Esto convierte a la plataforma en un productor sistemático de información estructurada.
+
+8. Usuarios
+Participantes del mercado
+
+Individuos informados
+
+Analistas
+
+Traders
+
+Instituciones que desean expresar expectativas
+
+Clientes de información (B2B)
+
+Empresas reguladas
+
+Fondos e inversores
+
+Consultoras
+
+Think tanks
+
+Medios de datos
+
+Organizaciones con exposición a riesgo político/regulatorio
+
+9. Modelo de negocio (doble capa)
+Capa 1 – Operación del mercado
+
+Comisión por trade (≈ 1%)
+
+Parte del fee incentiva al creador (LP)
+
+Parte sostiene la plataforma
+
+Estas comisiones mantienen el sistema, pero no son el negocio principal.
+
+Capa 2 – Venta de información (core económico)
+
+La información generada se vende como:
+
+Suscripciones a dashboards avanzados
+
+APIs de probabilidades y señales
+
+Índices de riesgo (ej. riesgo regulatorio por sector)
+
+Alertas tempranas
+
+Reportes premium
+
+Soluciones white-label
+
+Aquí está el valor escalable y defendible.
+
+10. Verticales (extensibilidad del negocio)
+
+La política es una vertical inicial, no el límite del negocio.
+
+La plataforma es aplicable a:
+
+regulación y policy
+
+macroeconomía
+
+riesgo institucional
+
+eventos corporativos
+
+ciencia y tecnología
+
+decisiones estratégicas empresariales
+
+El motor es el mismo; cambian los eventos.
+
+11. Ventaja competitiva
+
+Incentivos económicos bien alineados
+
+Precios endógenos (no arbitrarios)
+
+Historial medible de precisión
+
+Reducción explícita de incertidumbre
+
+Curaduría de mercados
+
+Datos propios acumulativos (moat informacional)
+
+12. Frase resumen (para IA / pitch / onboarding)
+
+Una plataforma de mercados de predicción que convierte información dispersa en probabilidades confiables, utilizando incentivos económicos para reducir la incertidumbre y producir inteligencia accionable para la toma de decisiones.
+
+13. Objetivo último del negocio
+
+No predecir el futuro, sino:
+
+Hacer explícita la incertidumbre, medirla, reducirla y vender esa reducción como información valiosa.
