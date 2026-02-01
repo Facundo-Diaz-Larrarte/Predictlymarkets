@@ -1,0 +1,14 @@
+[project]
+name = "predictly-backend"
+version = "0.1.0"
+description = "Prediction markets backend"
+requires-python = ">=3.11"
+dependencies = [
+    "fastapi",
+    "uvicorn[standard]",
+]
+
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
