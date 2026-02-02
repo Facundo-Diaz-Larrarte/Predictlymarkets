@@ -1,19 +1,43 @@
 from decimal import Decimal
 from datetime import datetime
 from typing import Optional
+import logging
+import os
 
 from fastapi import FastAPI, Depends, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
 from sqlalchemy.orm import Session
+import redis
 
 from .db import SessionLocal, Base, engine
 from .models import Market, MarketState, Position, Trade, LedgerEntry
 from .lmsr import quote_buy, price_yes
 from .schemas import MarketCreate, MarketOut, QuoteResponse, TradeRequest
 
+# Configure logging
+logging.basicConfig(level=logging.INFO)
+logger = logging.getLogger(__name__)
+
+# Create tables
 Base.metadata.create_all(bind=engine)
 
 app = FastAPI(title="Predictly Markets API")
+
+# Test database connection
+try:
+    with engine.connect() as conn:
+        logger.info("✅ Successfully connected to PostgreSQL database")
+except Exception as e:
+    logger.error(f"❌ Failed to connect to PostgreSQL: {e}")
+
+# Test Redis connection
+redis_url = os.getenv("REDIS_URL", "redis://localhost:6379/0")
+try:
+    redis_client = redis.from_url(redis_url)
+    redis_client.ping()
+    logger.info("✅ Successfully connected to Redis")
+except Exception as e:
+    logger.error(f"❌ Failed to connect to Redis: {e}")
 
 app.add_middleware(
     CORSMiddleware,
