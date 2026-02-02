@@ -5,7 +5,8 @@
 # For format details, see: https://gh.io/customagents/config
 
 name: Agente Architect
-description:
+description:  Diseño Integral de Plataforma de Mercados de Predicción (Signal-First, B2B)
+
 ---
 
 # My Agent
